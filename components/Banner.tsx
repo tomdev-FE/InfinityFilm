@@ -1,10 +1,6 @@
 import Image from "next/image";
 
-type Props = {
-  imgUrl: string;
-};
-
-const Banner = ({ imgUrl }: Props) => {
+const Banner = () => {
   return (
     <div className="bg-gray-100 relative">
       <div className=" flex pl-4 pr-4 max-w-7xl m-auto justify-between">
@@ -26,7 +22,7 @@ const Banner = ({ imgUrl }: Props) => {
         <div className=" ml-8 lg:block lg:w-1/2 lg:relative">
           <Image
             className="mt-6 shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden"
-            src={imgUrl}
+            src="/banner.jpeg"
             objectFit="cover"
             objectPosition="center"
             layout="fill"

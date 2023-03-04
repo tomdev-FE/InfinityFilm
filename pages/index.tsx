@@ -81,15 +81,7 @@ const Home: NextPage = () => {
       >
         <Header setQuery={setQuery} />
 
-        <Banner
-          imgUrl={
-            data?.pages[0].results[0]?.backdrop_path
-              ? process.env.NEXT_PUBLIC_API_IMAGE_PATH +
-                BACKDROP_SIZE +
-                data.pages[0].results[0].backdrop_path
-              : "/no_image.webp"
-          }
-        />
+        <Banner />
         <div className=" flex flex-col p-4 max-w-7xl m-auto justify-between sm:flex-row">
           <TabsBar queryOption={queryOption} setQueryOption={setQueryOption} />
           <SegmentedControl type={viewType} handleType={viewHandler} />
