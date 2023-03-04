@@ -30,6 +30,8 @@ The following **additional** features are implemented:
 
 - [x] Skeleton | Spinner
 - [x] Infinite Query when Scroll
+- [x] NextJS 
+- [x] NextJS api hide API when check in Network
 
 ## Video Walkthrough
 
